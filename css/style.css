@@ -62,15 +62,27 @@ p {
     #ff6699,
     #0033cc
   );
-   -webkit-background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: 2px 2px #ccc;
   font-size: 1.8em;
 }
 
+/* position transparent text over the image */
+.banner {
+    position: relative;
+}
+
+.banner .transparent {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align: center;
+}
+
 .transparent {
     background-color: rgba(0,0,0,0.5);
-    max-width: 1000px;
     padding: 10px;
     border-radius: 5px;
 }
@@ -177,6 +189,11 @@ footer a {
         font-size: 1em;
     }
     
+    .banner .transparent {
+        width: 95vw;
+        margin: auto;
+    }
+
     .banner {
         order: 1;
         display: flex;
@@ -188,18 +205,16 @@ footer a {
 
     .img-center {
         order: 0;
-        width: 100vw;
+        width: 95vw;
         height: 60vh;
         margin: auto;
     }
 
     .transparent {
-       order: 1;
-       padding: 10px;
+       order: 0;
+       padding: 0 10px;
        margin: 8px auto;
-       width: 100vw;
        font-size: 0.8em;
-       justify-content: space-around;
     }
 
     .section-header {
@@ -311,7 +326,7 @@ footer {
       width: 30%;
   }
 
-  .img-logo {
+.img-logo {
     max-width: 130px;
   }
 
@@ -335,13 +350,12 @@ footer {
 }
 
 .transparent {
-    width: 100vw;
     font-size: 14px;
     margin: 0 auto;
 }
 
 .img-center {
-    width: 100vw;
+    width: 95vw;
     max-height: 600px;
     margin: 20px auto 5px auto;
 }
@@ -477,7 +491,6 @@ li {
 }
 
 .transparent {
-    max-width: 1000px;
     margin: 0 auto;
 }
 
