@@ -79,6 +79,7 @@ p {
     left:50%;
     transform:translate(-50%,-50%);
     text-align: center;
+    width: 50vw;
 }
 
 .transparent {
@@ -309,6 +310,9 @@ footer {
 
 @media screen and (min-width: 551px) and (max-width: 999px) {
  
+p {
+    font-size: 28px;
+}
 .container {
     width: 100%;
     margin: auto;
@@ -334,6 +338,10 @@ footer {
      width: 70%;
      text-align: right;
      margin-right: 20px;
+}
+
+.banner .transparent {
+    width: 80vw;
 }
 
 .banner {
